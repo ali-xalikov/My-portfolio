@@ -119,8 +119,8 @@ export default function Skills({ mode, language }) {
     <div className="max-w-[1280px] mx-auto px-8 flex flex-col items-center py-20 min-h-screen">
       <div className="flex flex-wrap justify-center items-center gap-x-16 gap-y-12 mb-20">
         {skills.map((item, index) => (
-          <a href={item.a}>
-            <div key={item.skill} className="flex flex-col items-center group">
+          <a key={item.skill} href={item.a}>
+            <div className="flex flex-col items-center group">
               <div className="relative flex flex-col items-center gap-3 p-6 rounded-3xl bg-gray-800 text-white shadow-xl transition-all duration-300 shadow-fuchsia-500/30 hover:shadow-fuchsia-500/70 border border-transparent hover:scale-105 cursor-pointer">
                 <div className="absolute inset-0 rounded-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100 ring-2 ring-offset-2 ring-offset-gray-900 ring-fuchsia-500/50"></div>
                 <img
