@@ -1,0 +1,28 @@
+@import "tailwindcss";
+body{
+    background-color: #F7F7F7;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+*{
+    user-select: none;
+  -webkit-user-drag: none;
+}
+button{
+    cursor:pointer
+}
+#web::-webkit-scrollbar {
+  height: 10px;
+  background-color: #fff;
+}
+#web::-webkit-scrollbar-thumb {
+  background-color: #EDC843;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,0.06);
+}
+
+#web {
+  scrollbar-width: thin;
+  scrollbar-color: #EDC843 #ffffff;
+}

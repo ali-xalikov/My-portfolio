@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Rubik+Maze&display=swap');
+body::-webkit-scrollbar{
+  display:none;
+}
+body{
+  user-select: none;
+
+}
+#burger{
+  display: none;
+}
+.font-rubik{
+  font-family: "Bungee", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.shadows{
+  box-shadow: 20px 20px 20px teal;
+}
+.animate{
+  animation: animat 1s 1;
+}
+@keyframes animat{
+  0%{
+    right: -50%;
+  }
+  100%{
+    right: 0;
+  }
+}
+@media only screen and (max-width: 606px) {
+  #ul{
+    display: none;
+  }
+  #burger{
+    display: block;
+    ul{
+      display: block;
+    }
+  }
+}
