@@ -91,30 +91,36 @@ function App() {
         transition: "all 0.3s ease",
       }}
     >
-      <AnimatePresence>
-        {isLoading && (
-          <motion.div
-            className="fixed top-0 left-0 w-full h-full bg-[#0f172a] flex items-center justify-center z-50"
-            initial={{ rotateY: 90, opacity: 0 }}
-            animate={{ rotateY: 0, opacity: 1 }}
-            exit={{ opacity: 0, scale: 1.5 }}
-            transition={{ duration: 1.5, ease: "easeInOut" }}
-            style={{ perspective: 1000 }}
-          >
-            <motion.h1
-              className="text-3xl sm:text-5xl md:text-7xl text-teal-400 font-bold text-center px-4"
-              initial={{ scale: 0.5 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.5, duration: 1 }}
-            >
-              Welcome to Ali's Portfolio
-            </motion.h1>
-          </motion.div>
+      {isCarculation ||
+        isGithub ||
+        isFilms ||
+        isTodo ||
+        isYemak || (
+          <AnimatePresence>
+            {isLoading && (
+              <motion.div
+                className="fixed top-0 left-0 w-full h-full bg-[#0f172a] flex items-center justify-center z-50"
+                initial={{ rotateY: 90, opacity: 0 }}
+                animate={{ rotateY: 0, opacity: 1 }}
+                exit={{ opacity: 0, scale: 1.5 }}
+                transition={{ duration: 1.5, ease: "easeInOut" }}
+                style={{ perspective: 1000 }}
+              >
+                <motion.h1
+                  className="text-3xl sm:text-5xl md:text-7xl text-teal-400 font-bold text-center px-4"
+                  initial={{ scale: 0.5 }}
+                  animate={{ scale: 1 }}
+                  transition={{ delay: 0.5, duration: 1 }}
+                >
+                  Welcome to Ali's Portfolio
+                </motion.h1>
+              </motion.div>
+            )}
+          </AnimatePresence>
         )}
-      </AnimatePresence>
 
       <nav className="max-w-[1280px] mx-auto flex justify-between items-center px-6 md:px-12 py-4">
-        <Link to='/My-portfolio/'>
+        <Link to="/My-portfolio/">
           <div
             style={{ color: text }}
             className="font-rubik text-2xl sm:text-3xl cursor-pointer hover:text-teal-400 transition duration-200"

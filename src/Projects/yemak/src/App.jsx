@@ -36,7 +36,7 @@ function App() {
   
   return (
     <>
-      <div>
+      <div className='bg-[#fff]'>
         <div className="w-full mx-auto bg-[#fff] h-auto">
           <nav className="w-[1080px] mx-auto p-5 flex justify-between items-center bg-white">
             <div className="flex justify-between gap-6">

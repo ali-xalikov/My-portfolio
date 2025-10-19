@@ -12,7 +12,6 @@ import Movies from "../pages/Movies";
 import Movie from "../pages/movie";
 import Tv from "../pages/tv";
 import Bookmark from "../pages/bookmark";
-
 export default function Router() {
   const navigate = useNavigate();
   const location = useLocation();

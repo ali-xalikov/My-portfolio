@@ -9,6 +9,8 @@ import GithubSearch from '../Projects/github search/src/App'
 import Yemak from "../Projects/yemak/src/App";
 import Skills from "../Pages/Skills";
 import Contact from "../Pages/Contact";
+import NotFound from "../Pages/PageNotFound";
+
 
 
 
@@ -150,6 +152,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
             />
           }
         />
+        <Route path="/My-portfolio/*" element={<NotFound/>} />
       </Routes>
     );
 }
