@@ -45,7 +45,7 @@ export default function Login() {
 
     if (data.token) {
       localStorage.setItem("PostToken", data.token);
-      navigate("/projects/films/home");
+      navigate("/My-portfolio/projects/films/home");
     }
   }
 
@@ -67,7 +67,7 @@ export default function Login() {
         <p className="text-center mt-6 text-[15px]">
           Don’t have an account?{" "}
           <Link
-            to="/sign"
+            to="/My-portfolio/projects/films/sign"
             className="text-[#FC4747] cursor-pointer hover:text-white duration-500"
           >
             Sign up

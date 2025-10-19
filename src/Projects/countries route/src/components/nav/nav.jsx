@@ -12,16 +12,16 @@ export default function Nav() {
       <img src={Movie} alt="Movie" className="w-6 h-6" />
 
       <div className="flex flex-col items-center gap-6 mt-18">
-        <Link to="/projects/films/home">
+        <Link to="/My-portfolio/projects/films/home">
           <img src={Shape} alt="Home" className="w-5 h-5" />
         </Link>
-        <Link to="/projects/films/movie">
+        <Link to="/My-portfolio/projects/films/movie">
           <img src={Shape1} alt="Movie" className="w-5 h-5" />
         </Link>
-        <Link to="/projects/films/tv">
+        <Link to="/My-portfolio/projects/films/tv">
           <img src={Tv} alt="TV" className="w-5 h-5" />
         </Link>
-        <Link to="/projects/films/bookmark">
+        <Link to="/My-portfolio/projects/films/bookmark">
           <img src={Bookmark} alt="Bookmark" className="w-5 h-5" />
         </Link>
       </div>

@@ -183,7 +183,7 @@ function App() {
       className="w-full h-[100vh] flex justify-center items-center font-[space-mono]"
       style={{ backgroundColor: bgColor, color: textColor }}
     >
-      <Link to='/projects'>
+      <Link to='/My-portfolio/projects'>
         <span className="absolute right-5 top-5 text-5xl">&times;</span>
       </Link>
       <div>

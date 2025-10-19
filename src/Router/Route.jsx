@@ -19,7 +19,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
     return (
       <Routes>
         <Route
-          path="/home"
+          path="My-portfolio/"
           element={
             <Home
               introTexts={introTexts}
@@ -31,7 +31,19 @@ export default function Router({introTexts, language, mode, texts, photo}) {
           }
         />
         <Route
-          path="/skills"
+          path="My-portfolio/home"
+          element={
+            <Home
+              introTexts={introTexts}
+              language={language}
+              mode={mode}
+              texts={texts}
+              photo={photo}
+            />
+          }
+        />
+        <Route
+          path="My-portfolio/skills"
           element={
             <Skills
               introTexts={introTexts}
@@ -43,19 +55,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
           }
         />
         <Route
-          path="/навыки"
-          element={
-            <Skills
-              introTexts={introTexts}
-              language={language}
-              mode={mode}
-              texts={texts}
-              photo={photo}
-            />
-          }
-        />
-        <Route
-          path="/contact"
+          path="My-portfolio/contact"
           element={
             <Contact
               introTexts={introTexts}
@@ -67,43 +67,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
           }
         />
         <Route
-          path="/"
-          element={
-            <Home
-              introTexts={introTexts}
-              language={language}
-              mode={mode}
-              texts={texts}
-              photo={photo}
-            />
-          }
-        />
-        <Route
-          path="/главная"
-          element={
-            <Home
-              introTexts={introTexts}
-              language={language}
-              mode={mode}
-              texts={texts}
-              photo={photo}
-            />
-          }
-        />
-        <Route
-          path="/bosh sahifa"
-          element={
-            <Home
-              introTexts={introTexts}
-              language={language}
-              mode={mode}
-              texts={texts}
-              photo={photo}
-            />
-          }
-        />
-        <Route
-          path="/about"
+          path="My-portfolio/about"
           element={
             <About
               aboutTexts={introTexts}
@@ -115,31 +79,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
           }
         />
         <Route
-          path="/haqida"
-          element={
-            <About
-              aboutTexts={introTexts}
-              language={language}
-              mode={mode}
-              texts={texts}
-              photo={photo}
-            />
-          }
-        />
-        <Route
-          path="/обо мне"
-          element={
-            <About
-              aboutTexts={introTexts}
-              language={language}
-              mode={mode}
-              texts={texts}
-              photo={photo}
-            />
-          }
-        />
-        <Route
-          path="/projects"
+          path="My-portfolio/projects"
           element={
             <Projects
               aboutTexts={introTexts}
@@ -151,31 +91,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
           }
         />
         <Route
-          path="/loyihalar"
-          element={
-            <Projects
-              aboutTexts={introTexts}
-              language={language}
-              mode={mode}
-              texts={texts}
-              photo={photo}
-            />
-          }
-        />
-        <Route
-          path="/проекты"
-          element={
-            <Projects
-              aboutTexts={introTexts}
-              language={language}
-              mode={mode}
-              texts={texts}
-              photo={photo}
-            />
-          }
-        />
-        <Route
-          path="projects/carculation"
+          path="My-portfolio/projects/carculation"
           element={
             <App
               aboutTexts={introTexts}
@@ -187,7 +103,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
           }
         />
         <Route
-          path="projects/to-do"
+          path="My-portfolio/projects/to-do"
           element={
             <Todo
               aboutTexts={introTexts}
@@ -199,7 +115,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
           }
         />
         <Route
-          path="projects/yemak/*"
+          path="My-portfolio/projects/yemak/*"
           element={
             <Yemak
               aboutTexts={introTexts}
@@ -211,7 +127,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
           }
         />
         <Route
-          path="projects/github"
+          path="My-portfolio/projects/github"
           element={
             <GithubSearch
               aboutTexts={introTexts}
@@ -223,7 +139,7 @@ export default function Router({introTexts, language, mode, texts, photo}) {
           }
         />
         <Route
-          path="/projects/films/*"
+          path="/My-portfolio/projects/films/*"
           element={
             <Films
               aboutTexts={introTexts}

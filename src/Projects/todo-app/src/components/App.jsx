@@ -71,7 +71,7 @@ function App() {
       className="min-h-screen transition-all duration-700 ease-in-out"
       style={{ backgroundColor: bg }}
     >
-      <Link to="/projects">
+      <Link to="/My-portfolio/projects">
         <span className="text-5xl text-white absolute top-5 right-5">
           &times;
         </span>

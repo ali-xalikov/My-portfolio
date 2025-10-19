@@ -96,7 +96,7 @@ export default function Restaurants(props) {
   return (
     <div className="w-[1080px] mx-auto mt-[17px]">
       <div>
-        <Link to="/projects/yemak">
+        <Link to="My-portfolio/projects/yemak">
           <h3 className="font-medium text-[18px] leading-[100%]">
             Asosiy sahifa › Restoranlar ›{" "}
             <span className="text-[#B0B7BA]">{selected?.name}</span>
@@ -113,7 +113,7 @@ export default function Restaurants(props) {
             }}
           >
             <div className="w-10 h-10 rounded-[12px] absolute right-5 items-center flex text-center bg-[#FFFFFF1A] justify-center border-white border">
-              <Link to="/">
+              <Link to="/My-portfolio/">
                 <img src={unload} alt="" />
               </Link>
             </div>

@@ -22,7 +22,7 @@ export default function Header({ value, setMess }) {
         <div className="flex flex-wrap gap-6 mt-10">
           {searched?.length > 0
             ? searched.map((item, ind) => (
-                <Link key={ind} to={`/projects/yemak/page/${item.id}`}>
+                <Link key={ind} to={`/My-portfolio/projects/yemak/page/${item.id}`}>
                   <div
                     className="w-[344px] transition-all duration-500 rounded-2xl cursor-pointer hover:scale-105"
                     onClick={() => setMess(item)}

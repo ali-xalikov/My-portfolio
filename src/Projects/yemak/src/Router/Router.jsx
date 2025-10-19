@@ -9,7 +9,7 @@ export default function Rout({ value }) {
 
   return (
     <div>
-      <Link to='/projects'>
+      <Link to='/My-portfolio/projects'>
         <span className="absolute cursor-pointer right-5 top-5 text-5xl">
           &times;
         </span>

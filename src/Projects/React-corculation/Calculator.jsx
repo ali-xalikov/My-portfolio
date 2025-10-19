@@ -66,7 +66,7 @@ export default function Calculator() {
     <div
       className={`min-h-screen flex flex-col items-center justify-center ${current.bg} transition-all duration-300`}
     >
-      <Link to='/projects'>
+      <Link to='/My-portfolio/projects'>
         <span className="absolute right-5 top-5 text-5xl text-white">
           &times;
         </span>

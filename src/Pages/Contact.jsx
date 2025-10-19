@@ -8,6 +8,10 @@ export default function Contact({ mode, language }) {
     message: "",
   });
 
+  let bg = !mode ? "#1e2939" : "#f1f5f9";
+  let text = mode ? "#1e2939" : "#f1f5f9";
+
+
   const [submitted, setSubmitted] = useState(false);
 
   const titles = {
@@ -72,7 +76,8 @@ export default function Contact({ mode, language }) {
           value={formData.name}
           onChange={handleChange}
           placeholder={placeholder.name}
-          className="p-4 rounded-xl bg-gray-800 text-white placeholder-gray-400 border border-transparent focus:border-teal-400 focus:outline-none transition-all"
+          style={{ backgroundColor: bg , color: text}}
+          className="p-4 rounded-xl text-white placeholder-gray-400 border border-transparent focus:border-teal-400 focus:outline-none transition-all"
           required
         />
         <input
@@ -80,16 +85,18 @@ export default function Contact({ mode, language }) {
           name="email"
           value={formData.email}
           onChange={handleChange}
+          style={{ backgroundColor: bg , color: text}}
           placeholder={placeholder.email}
-          className="p-4 rounded-xl bg-gray-800 text-white placeholder-gray-400 border border-transparent focus:border-teal-400 focus:outline-none transition-all"
+          className="p-4 rounded-xl text-white placeholder-gray-400 border border-transparent focus:border-teal-400 focus:outline-none transition-all"
           required
         />
         <textarea
           name="message"
           value={formData.message}
           onChange={handleChange}
+          style={{ backgroundColor: bg , color:text}}
           placeholder={placeholder.message}
-          className="p-4 rounded-xl bg-gray-800 text-white placeholder-gray-400 border border-transparent focus:border-teal-400 focus:outline-none transition-all resize-none h-32"
+          className="p-4 rounded-xl text-white placeholder-gray-400 border border-transparent focus:border-teal-400 focus:outline-none transition-all resize-none h-32"
           required
         ></textarea>
         <button
