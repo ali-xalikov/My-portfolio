@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: "Source Sans Pro", sans-serif;
+    }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-[#335B67] to-[#2C3E50] flex items-center justify-center px-4">
+
+  <div class="max-w-6xl w-full flex flex-col md:flex-row gap-8">
+
+    <!-- GRID -->
+    <ul id="grid"
+      class="grid grid-cols-6 sm:grid-cols-8 md:grid-cols-10 gap-1 w-full md:w-1/2">
+    </ul>
+
+    <!-- TEXT -->
+    <div class="md:w-1/2 text-white space-y-6 text-base font-light">
+      <h1 class="text-3xl sm:text-5xl font-normal leading-tight">
+        We couldn't find what you were looking for.
+      </h1>
+
+      <p>
+        Unfortunately the page you were looking for could not be found.
+        It may be temporarily unavailable, moved or no longer exist.
+      </p>
+
+      <p>
+        Check the URL you entered for any mistakes and try again.
+      </p>
+
+      <a href="/My-portfolio/home">
+        <button
+          class="px-5 py-2 bg-teal-400 text-white rounded-[10px] shadow shadow-teal-400">
+          Home
+        </button>
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const LETTERS = [
+      "k","v","n","z","i","x","m","e","t","a","x","l",
+      { c: "one", v: "4" },
+      { c: "two", v: "0" },
+      { c: "three", v: "4" },
+      "y","y","w","v","b","o","q","d","y","p","a","v",
+      "j","a","s","c","e","w","v","x","e","p","c","f",
+      "h","q","e","s","w","q","v","o","s","m","v","f",
+      "u","z","i",
+      { c: "four", v: "n" },
+      { c: "five", v: "o" },
+      { c: "six", v: "t" },
+      "m","e","t","a","x","l","q","e","s","w","q","v",
+      "o","s","m","v","f","u","z","i","x","m","e","t",
+      "a","x","l","z","x","x","l","e","a","n","x",
+      { c: "seven", v: "f" },
+      { c: "eight", v: "o" },
+      { c: "nine", v: "u" },
+      { c: "ten", v: "n" },
+      { c: "eleven", v: "d" },
+      "n","t","m"
+    ];
+
+    const grid = document.getElementById("grid");
+    const refs = {};
+
+    LETTERS.forEach(item => {
+      const li = document.createElement("li");
+      const value = typeof item === "string" ? item : item.v;
+      const cls = typeof item === "string" ? "" : item.c;
+
+      li.textContent = value;
+      li.className = `
+        w-full aspect-square text-center uppercase
+        text-white/70 text-[1.6vw] sm:text-xl font-light
+        bg-black/20 flex items-center justify-center
+        transition-all duration-700 ${cls}
+      `;
+
+      if (cls) refs[cls] = li;
+      grid.appendChild(li);
+    });
+
+    const sequence = [
+      "one","two","three","four","five","six",
+      "seven","eight","nine","ten","eleven"
+    ];
+
+    sequence.forEach((cls, i) => {
+      setTimeout(() => {
+        refs[cls]?.classList.add(
+          "bg-emerald-500",
+          "text-white",
+          "font-semibold"
+        );
+      }, 1500 + i * 500);
+    });
+  </script>
+
+</body>
+</html>
